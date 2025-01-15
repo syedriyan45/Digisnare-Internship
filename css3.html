@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>CSS3 Examples</title>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      #box{
+        height: 250px;
+        width:250px;
+        background-color: orange;
+        text-align: center;
+        line-height: 250px;
+        color: white;
+        border-radius: 50%;
+        box-shadow:10px 10px 10px red;
+        text-shadow: 10px 10px 10px red;
+        float:left;
+      }
+      .main{
+        height: 250px;
+        width: 250px;
+        border:solid 1px red;
+        float: left;
+      }
+      #rotate:hover{
+        transition: 5s;
+        transform: rotate(360deg);
+      }
+      #scale:hover{
+        transition: 5s;
+        transform: scale(2,2);
+      }
+      #skew:hover{
+        transition: 5s;
+        transform: skew(30deg,60deg);
+      }
+      #translate:hover{
+        transition: 5s;
+        transform: translate(60px,90px);
+      }
+      h1{
+        text-align: center;
+        line-height: 250px;
+        color: orange;
+
+      }
+      .animation{
+        background-color: red;
+        animation-name: digisnare;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes digisnare{
+        from{background-color:red}
+        to{background-color: green}
+      }
+      .lg{
+        background:linear-gradient(117deg,
+        rgba(91,118,207,1)30%,
+        rgba(37,173,25,1)40%);
+      }
+      .rg{
+        background:radial-gradient(
+        100% 100% at 45% 50%,
+        rgba(15,37,110,1)12%,
+        rgba(37,173,20,1)80%);
+      }
+      .rgba{
+        background-color: rgba(43,52,1,60);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      Digisnare 
+    </div>
+    <div class="main">Rotate
+      <h1 id="rotate">Go</h1>
+    </div>
+        <div class="main">Scale
+      <h1 id="scale">Go</h1>
+    </div>
+    <div class="main">Skew
+      <h1 id="skew">Go</h1>
+    </div>
+    <div class="main">Translate 
+      <h1 id="translate">Go</h1>
+    </div>
+    <div class="main animation">
+      Animation 
+    </div>
+    <div class="main lg">Linear Gradient </div>
+    <div class="main rg">Radial Gradient </div>
+    <div class="main rgba">RGBA Gradient </div>
+  </body>
+  </body>
+  </body>
+</html>
